@@ -1,0 +1,67 @@
+.service-cards{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.service-cards__order-button{
+    padding: 8px 12px;
+    font-size: 14px;
+    border: none;
+    border-radius: 6px;
+    color: #ffffff;
+    background-color: #ffc300;
+    transition: opacity 0.2s;
+    cursor: pointer;
+}
+
+.service-cards__order-button:hover{
+    opacity: 0.8;
+}
+
+.service-card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    padding: 12px;
+    border: solid 1px rgb(124, 124, 124);
+    border-radius: 8px;
+}
+
+.service-card__title{
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.service-card__price{
+    font-size: 14px;
+    color: gray;
+}
+
+.service-card__action{
+    padding: 8px 12px;
+    font-size: 14px;
+    border: none;
+    border-radius: 6px;
+    color: #ffffff;
+    transition: opacity 0.2s;
+    cursor: pointer;
+}
+
+.service-card__action:hover{
+    opacity: 0.8;
+}
+
+@media (max-width: 600px){
+    .service-card{
+        display: grid;
+        grid-template-columns: 1fr;
+        
+    }
+
+    .service-card__action{
+        margin-top: 0;
+    }
+}
